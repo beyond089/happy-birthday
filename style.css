@@ -46,6 +46,7 @@ body {
 }
 
 .text_hpbd h6 {
+    z-index: 898989;
     padding: 0 10px;
     margin-top: 8px;
     font-family: "Sacramento", cursive;
@@ -120,11 +121,6 @@ body {
     }
 }
 
-.text_hpbd p {
-    z-index: 898989;
-    font-size: 14px;
-}
-
 img {
     cursor: url(./images/cursor-3.png), auto !important;
     position: absolute;
@@ -181,6 +177,11 @@ img {
 
     .text_hpbd a {
         font-size: 30px;
+    }
+    
+    .text_hpbd p {
+    z-index: 898989;
+    font-size: 10px;
     }
 
     .image1 {
