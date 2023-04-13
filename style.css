@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    cursor: url(./images/cursor-1.png), auto !important;  
+    user-select: none;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/brick_wall.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+.text_hpbd {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_hpbd h1 {
+    cursor: url(./images/cursor-3.png), auto !important;
+    color: #fff6a9;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: center;
+    z-index: 999999;
+    font-size: 8.8vw;
+    font-family: "Neonderthaw", cursive;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    animation: blink 300ms linear infinite;
+}
+
+.text_hpbd h6 {
+    padding: 0 10px;
+    margin-top: 8px;
+    font-family: "Sacramento", cursive;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    transform: rotate(-10deg);
+    animation: blink 300ms linear infinite;
+    transition: 300ms linear;
+}
+
+.text_hpbd h6:hover {
+    transform: rotate(10deg);
+}
+
+.text_hpbd a {
+    font-family: "Sacramento", cursive;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    transition: 0.3s linear;
+    animation: blink 300ms linear infinite;
+    text-decoration: none;
+}
+
+.text_hpbd a:hover {
+    text-decoration: underline;
+}
+
+.text_hpbd p {
+    cursor: pointer;
+    font-family: 'EB Garamond', serif;
+    color: #ffcb88;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 700px;
+    font-size: 22px;
+    background: #000000b8;
+    padding: 8px;
+    border-radius: 2px;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.text_hpbd p:hover {
+    cursor: url(./images/cursor-3.png), auto !important;
+    color: #ffb85c;
+    background: #000000dc;
+}
+
+@keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+            0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+    }
+}
+
+img {
+    cursor: url(./images/cursor-3.png), auto !important;
+    position: absolute;
+    z-index: 888;
+    border: 4px solid whitesmoke;
+    image-resolution: 72dpi;
+    border-radius: 2px;
+}
+
+.image1 {
+    top: 80px;
+    right: 0;
+    width: 150px;
+    transform: rotate(20deg);
+}
+
+.image2 {
+    top: 180px;
+    left: 0;
+    width: 150px;
+    transform: rotate(-10deg);
+}
+
+.image3 {
+    top: 40px;
+    transform: rotate(6deg);
+    width: 160px;
+    height: 240px;
+}
+
+.image4 {
+    top: 520px;
+    right: -8px;
+    transform: rotate(-6deg);
+    width: 260px;
+}
+
+.image5 {
+    top: 520px;
+    left: -8px;
+    transform: rotate(16deg);
+    width: 260px;
+}
+
+@media screen and (max-width: 768px) {
+    .text_hpbd h1 {
+        font-size: 60px;
+    }
+
+    .text_hpbd h6 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .text_hpbd a {
+        font-size: 30px;
+    }
+
+    .image1 {
+        top: 80px;
+        right: 0;
+        width: 120px;
+        transform: rotate(20deg);
+    }
+
+    .image2 {
+        top: 180px;
+        left: 0;
+        width: 120px;
+        transform: rotate(-10deg);
+    }
+
+    .image3 {
+        top: 40px;
+        transform: rotate(6deg);
+        width: 120px;
+        height: 160px;
+    }
+
+    .image4 {
+        top: 520px;
+        transform: rotate(-6deg);
+        width: 190px;
+    }
+
+    .image5 {
+        top: 500px;
+        transform: rotate(-6deg);
+        width: 180px;
+    }
+}
