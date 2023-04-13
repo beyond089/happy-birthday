@@ -180,8 +180,10 @@ img {
     }
     
     .text_hpbd p {
-    z-index: 898989;
-    font-size: 10px;
+        width: 400px;
+        margin: 0 16px;
+        z-index: 898989;
+        font-size: 18px;
     }
 
     .image1 {
