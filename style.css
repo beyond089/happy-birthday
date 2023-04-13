@@ -188,14 +188,14 @@ img {
 
     .image1 {
         top: 80px;
-        right: 0;
+        right: -4px;
         width: 120px;
         transform: rotate(20deg);
     }
 
     .image2 {
         top: 180px;
-        left: 0;
+        left: -8px;
         width: 120px;
         transform: rotate(-10deg);
     }
@@ -209,13 +209,11 @@ img {
 
     .image4 {
         top: 520px;
-        transform: rotate(-6deg);
         width: 190px;
     }
 
     .image5 {
         top: 500px;
-        transform: rotate(16deg);
         width: 180px;
     }
 }
