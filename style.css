@@ -38,7 +38,7 @@ body {
     cursor: pointer;
     font-weight: normal;
     text-align: center;
-    z-index: 999999;
+    z-index: 898989;
     font-size: 8.8vw;
     font-family: "Neonderthaw", cursive;
     text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
@@ -76,6 +76,7 @@ body {
 }
 
 .text_hpbd p {
+    z-index: 898989;
     cursor: pointer;
     font-family: 'EB Garamond', serif;
     color: #ffcb88;
@@ -117,6 +118,11 @@ body {
             0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
         color: #fff6a9;
     }
+}
+
+.text_hpbd p {
+    z-index: 898989;
+    font-size: 14px;
 }
 
 img {
