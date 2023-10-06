@@ -42,7 +42,16 @@ function disableRightClick() {
   isRightClickAllowed = false;
 }
 
-//F12 
+//Disable F12 
 window.addEventListener('keydown', (e) => {
     if(e.key === 'F12') e.preventDefault();
 })
+
+// Disable ctrl + shift + i
+document.addEventListener('keydown', function(event) {
+    if(event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+        event.preventDefault();
+        window.location.reload();
+        return false;
+    }
+});
